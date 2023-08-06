@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IMDB - Admin Side</title>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Boxicons -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Login Start -->
+    <section class="login">
+      <div class="login-content">
+        <h2>Login</h2>
+        <form id="login-form">
+          <label for="login-email">Email</label>
+          <input 
+            type="email"
+            id="login-email"
+            placeholder="Enter email address ..."
+            autocomplete="off"
+            required
+          />
+          <label for="login-password">Password</label>
+          <input
+            type="password"
+            id="login-password"
+            placeholder="Enter password ..."
+            autocomplete="off"
+            required
+          />
+          <button type="submit">Login</button>
+        </form>
+      </div>
+    </section>
+    <!-- Login End -->
+
+    <!-- Sidebar Start -->
+    <section class="sidebar">
+      <div class="sidebar-content">
+        <div class="sidebar-logo">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/IMDB_Logo_2016.svg/2560px-IMDB_Logo_2016.svg.png" alt="imdb-logo" />
+        </div>
+        <div class="sidebar-menu">
+          <ul>
+            <li>
+              <i class="bx bxs-dashboard"></i>
+              <span>Dashboard</span>
+            </li>
+            <li>
+              <i class='bx bxs-book-content' ></i>
+              <span>Genres</span>
+            </li>
+            <li>
+              <i class="bx bx-male-female"></i>
+              <span>Casts</span>
+            </li>
+            <li>
+              <i class="bx bxs-user-plus"></i>
+              <span>Register Admin</span>
+            </li>
+            <li>
+              <i class="bx bx-log-out"></i>
+              <span>Logout</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- Sidebar End -->
+
+    <!-- Dashboard Start -->
+    <section class="dashboard">
+      <div class="dashboard-content">
+        <div class="dashboard-counter">
+          <div class="counter-box">
+            <i class='bx bxs-movie' ></i>
+            <div class="text-box">
+              <h4>4</h4>
+              <p>Movies</p>
+            </div>
+          </div>
+          <div class="counter-box">
+            <i class='bx bxs-book-content' ></i>
+            <div class="text-box">
+              <h4>4</h4>
+              <p>Genres</p>
+            </div>
+          </div>
+          <div class="counter-box">
+            <i class="bx bx-male-female"></i>
+            <div class="text-box">
+              <h4>4</h4>
+              <p>Casts</p>
+            </div>
+          </div>
+        </div>
+        <div class="dashboard-movies">
+          <div class="movies-header">
+            <h4>Movie List</h4>
+            <a href="#">
+              <i class="bx bx-plus-medical"></i>
+              <p>New Movie</p>
+            </a>
+          </div>
+          <div class="movies-table">
+            <table>
+              <thead>
+                <tr>
+                  <th>No</th>
+                  <th>Title</th>
+                  <th>Synopsis</th>
+                  <th>Trailer URL</th>
+                  <th>Image URL</th>
+                  <th>Year</th>
+                  <th>Rating</th>
+                  <th>Genre</th>
+                  <th>Author</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Movie 1</td>
+                  <td>Movie 1 Synopsis</td>
+                  <td>https://example.com/trailer1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium unde, quae voluptatum dolores a accusamus placeat ad ratione nam laborum natus consequatur excepturi, tenetur quidem eius debitis aliquam voluptatibus reiciendis!</td>
+                  <td>https://example.com/image1.jpg</td>
+                  <td>2023</td>
+                  <td>8.5</td>
+                  <td>Action</td>
+                  <td>John Doe</td>
+                  <td>
+                    <a href="#">Edit</a>
+                    <a href="#">Delete</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Movie 2</td>
+                  <td>Movie 2 Synopsis</td>
+                  <td>https://example.com/trailer2</td>
+                  <td>https://example.com/image2.jpg</td>
+                  <td>2023</td>
+                  <td>7.8</td>
+                  <td>Comedy</td>
+                  <td>Jane Smith</td>
+                  <td>
+                    <a href="#">Edit</a>
+                    <a href="#">Delete</a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Dashboard End -->
+
+    <!-- New Movie Start -->
+    <section class="new-movie">
+      <div class="new-movie-content">
+        <h2>New Movie</h2>
+        <form id="new-movie-form">
+          <div class="input-box">
+            <label for="new-movie-title">Title</label>
+            <input 
+              type="text"
+              id="new-movie-title"
+              placeholder="Enter movie title ..."
+              autocomplete="off"
+              required
+            />
+          </div>
+          <div class="input-box">
+            <label for="new-movie-sypnopsis">Sypnopsis</label>
+            <input 
+              type="text"
+              id="new-movie-sypnopsis"
+              placeholder="Enter movie sypnopsis ..."
+              autocomplete="off"
+              required
+            />
+          </div>
+          <div class="input-box">
+            <label for="new-movie-trailer-url">Trailer URL</label>
+            <input 
+              type="text"
+              id="new-movie-trailer-url"
+              placeholder="Enter movie trailer url ..."
+              autocomplete="off"
+              required
+            />
+          </div>
+          <div class="input-box">
+            <label for="new-movie-img-url">Image URL</label>
+            <input 
+              type="text"
+              id="new-movie-img-url"
+              placeholder="Enter movie image url ..."
+              autocomplete="off"
+              required
+            />
+          </div>
+          <div class="input-box">
+            <label for="new-movie-rating">Rating</label>
+            <input 
+              type="number"
+              id="new-movie-rating"
+              placeholder="Enter movie rating from 1 to 10 ..."
+              autocomplete="off"
+              required
+            />
+          </div>
+          <div class="input-box">
+            <label for="new-movie-genre">Genre</label>
+            <select id="new-movie-genre" required>
+              <option value="" selected disabled>-- Select Genre --</option>
+              <option value="">Action</option>
+              <option value="">Comedy</option>
+              <option value="">Adventure</option>
+              <option value="">Sci-Fi</option>
+              <option value="">Romance</option>
+            </select>
+          </div>
+          <button type="submit">Add</button>
+          <button>Cancel</button>
+        </form>
+      </div>
+    </section>
+    <!-- New Movie Start -->
+
+    <!-- Genres Start -->
+    <section class="genres">
+      <div class="genres-content">
+        <div class="genres-header">
+          <h4>Genre List</h4>
+          <a href="#">
+            <i class="bx bx-plus-medical"></i>
+            <p>New Genre</p>
+          </a>
+        </div>
+        <div class="genres-table">
+          <table>
+            <thead>
+              <tr>
+                <th>No</th>
+                <th>Name</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Action</td>
+                <td>
+                  <a href="#">Edit</a>
+                  <a href="#">Delete</a>
+                </td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Comedy</td>
+                <td>
+                  <a href="#">Edit</a>
+                  <a href="#">Delete</a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+    <!-- Genres End -->
+
+    <!-- New Genre Start -->
+    <section class="new-genre">
+      <div class="new-genre-content">
+        <h2>New Genre</h2>
+        <form id="new-genre-form">
+          <div class="input-box">
+            <label for="new-genre-name">Name</label>
+            <input 
+              type="text"
+              id="new-genre-name"
+              placeholder="Enter genre name ..."
+              autocomplete="off"
+              required
+            />
+          </div>
+          <button type="submit">Add</button>
+          <button>Cancel</button>
+        </form>
+      </div>
+    </section>
+    <!-- New Genre Start -->
+
+    <!-- Casts Start -->
+    <section class="casts">
+      <div class="casts-content">
+        <div class="casts-header">
+          <h4>Cast List</h4>
+          <a href="#">
+            <i class="bx bx-plus-medical"></i>
+            <p>New Cast</p>
+          </a>
+        </div>
+        <div class="casts-table">
+          <table>
+            <thead>
+              <tr>
+                <th>No</th>
+                <th>Name</th>
+                <th>Profile Picture</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>John Doe</td>
+                <td>Picture URL</td>
+                <td>
+                  <a href="#">Edit</a>
+                  <a href="#">Delete</a>
+                </td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Jane Doe</td>
+                <td>Picture URL</td>
+                <td>
+                  <a href="#">Edit</a>
+                  <a href="#">Delete</a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+    <!-- Casts End -->
+
+    <!-- New Cast Start -->
+    <section class="new-cast">
+      <div class="new-cast-content">
+        <h2>New Cast</h2>
+        <form id="new-cast-form">
+          <div class="input-box">
+            <label for="new-cast-movie">Casted Movie</label>
+            <select id="new-cast-movie" required>
+              <option value="" selected disabled>-- Select Movie --</option>
+              <option value="">Movie 1</option>
+              <option value="">Movie 2</option>
+              <option value="">Movie 3</option>
+              <option value="">Movie 4</option>
+              <option value="">Movie 5</option>
+            </select>
+          </div>
+          <div class="input-box">
+            <label for="new-cast-name">Name</label>
+            <input 
+              type="text"
+              id="new-cast-name"
+              placeholder="Enter cast name ..."
+              autocomplete="off"
+              required
+            />
+          </div>
+          <div class="input-box">
+            <label for="new-cast-profile-picture">Profile Picture URL</label>
+            <input 
+              type="text"
+              id="new-cast-profile-picture"
+              placeholder="Enter cast profile picture url ..."
+              autocomplete="off"
+              required
+            />
+          </div>
+          <button type="submit">Add</button>
+          <button>Cancel</button>
+        </form>
+      </div>
+    </section>
+    <!-- New Cast Start -->
+
+    <!-- Register Start -->
+    <section class="register">
+      <div class="register-content">
+        <h2>Register New Admin</h2>
+        <form id="register-form">
+          <div class="input-box">
+            <label for="register-username">Username</label>
+            <input 
+              type="text"
+              id="register-username"
+              placeholder="Enter your username ..."
+              autocomplete="off"
+              required
+            />
+          </div>
+          <div class="input-box">
+            <label for="register-email">Email</label>
+            <input 
+              type="email"
+              id="register-email"
+              placeholder="Enter your email ..."
+              autocomplete="off"
+              required
+            />
+          </div>
+          <div class="input-box">
+            <label for="register-password">Password</label>
+            <input 
+              type="password"
+              id="register-password"
+              placeholder="Enter your password ..."
+              autocomplete="off"
+              required
+            />
+          </div>
+          <div class="input-box">
+            <label for="register-phone">Phone Number</label>
+            <input 
+              type="text"
+              id="register-phone"
+              placeholder="Enter your phone number (optional) ..."
+              autocomplete="off"
+            />
+          </div>
+          <div class="input-box">
+            <label for="register-address">Address</label>
+            <textarea
+              id="register-address"
+              rows="3"
+              placeholder="Enter your address (optional) ..."
+              autocomplete="off"
+            ></textarea>
+          </div>
+          <button type="submit">Add</button>
+          <button>Cancel</button>
+        </form>
+      </div>
+    </section>
+    <!-- Register Start -->
+  </body>
+</html>

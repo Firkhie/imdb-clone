@@ -1,0 +1,26 @@
+[
+  {
+    "username": "admin1",
+    "email": "admin1@gmail.com",
+    "password": "123456",
+    "role": "Admin",
+    "phoneNumber": "123456789",
+    "address": "123 Main Street"
+  },
+  {
+    "username": "admin2",
+    "email": "admin2@gmail.com",
+    "password": "123456",
+    "role": "Admin",
+    "phoneNumber": "987654321",
+    "address": "456 Elm Avenue"
+  },
+  {
+    "username": "admin3",
+    "email": "admin3@gmail.com",
+    "password": "123456",
+    "role": "Admin",
+    "phoneNumber": "456789123",
+    "address": "789 Oak Road"
+  }
+]

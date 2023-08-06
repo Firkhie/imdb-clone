@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IMDB - Client Side</title>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Boxicons -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Navbar Start -->
+    <header>
+      <a href="#" class="logo">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/IMDB_Logo_2016.svg/2560px-IMDB_Logo_2016.svg.png" alt="logo_img" style="width: 100%;">
+      </a>
+      <a href="#" class="menu">
+        <i class='bx bx-menu'></i>
+        <span>Menu</span>
+      </a>
+      <div class="search-bar">
+        <form class="search-form">
+          <label for="search-input">All</label>
+          <input type="text" placeholder="Search IMDb" class="search-input" />
+          <i class='bx bx-search-alt-2'></i>
+        </form>
+      </div>
+      <a href="#" style="width: 84px;">
+        <img src="./assets/imdb-pro.png" alt="" style="width: 75%;">
+      </a>
+      <a href="#" class="watchlist">
+        <i class='bx bxs-bookmark-plus'></i>
+        <span>Watchlist</span>
+      </a>
+      <a href="#" class="sign-in">
+        <span>Sign In</span>
+      </a>
+      <a href="" class="language">
+        <span>EN</span>
+      </a>
+    </header>
+    <!-- Navbar End -->
+
+    <!-- Hero Start -->
+    <section class="hero">
+      <div class="slider-wrapper">
+        <div class="slider">
+          <img id="slide-1" src="https://i0.wp.com/www.murphysmultiverse.com/wp-content/uploads/2022/12/Across-the-Spider-Verse.jpg?fit=1024%2C576&ssl=1" alt="" />
+          <img id="slide-2" src="https://i.ytimg.com/vi/mJ12UnFa-Yo/maxresdefault.jpg" alt="" />
+          <img id="slide-3" src="https://assets-in.bmscdn.com/discovery-catalog/events/et00122562-ymtsjwygmy-landscape.jpg" alt="" />
+        </div>
+        <div class="slider-nav">
+          <a href="#slide-1"></a>
+          <a href="#slide-2"></a>
+          <a href="#slide-3"></a>
+        </div>
+      </div>
+      <div class="hero-card">
+        <h3>Up Next</h3>
+        <div class="card">
+          <div class="left-card">
+            <img src="https://media-cache.cinematerial.com/p/500x/nvzxjkhg/spider-man-across-the-spider-verse-movie-poster.jpg?v=1682534125" alt="">
+          </div>
+          <div class="right-card">
+            <h4>Spider-Man: Across the Spider-Verse</h4>
+            <p>Action</p>
+            <p><i class="bx bx-star"></i> 9.00</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="left-card">
+            <img src="https://media-cache.cinematerial.com/p/500x/00y3oix2/transformers-rise-of-the-beasts-movie-poster.jpg?v=1682600690" alt="">
+          </div>
+          <div class="right-card">
+            <h4>Transformers: Rise of the Beasts</h4>
+            <p>Action</p>
+            <p><i class="bx bx-star"></i> 9.00</p>
+          </div>
+        </div>
+        <span>Browse Trailer <i class='bx bx-right-arrow-alt' ></i></span>
+      </div>
+    </section>
+    <!-- Hero End -->
+
+    <!-- Movies Start -->
+    <section class="movies">
+      <h2>What to watch</h2>
+      <h3>Fan Favorites</h3>
+      <div class="movies-content">
+        <div class="movie-card">
+          <div class="top-card">
+            <img src="https://media-cache.cinematerial.com/p/500x/00y3oix2/transformers-rise-of-the-beasts-movie-poster.jpg?v=1682600690" alt="">
+          </div>
+          <div class="bottom-card">
+            <span><i class="bx bx-star"></i> 9.00</span>
+            <h4>Transformers: Rise of the Beasts</h4>
+            <a href="#">
+              <i class='bx bx-plus'></i>
+              <p>Watchlist</p>
+            </a>
+          </div>
+        </div>
+        <div class="movie-card">
+          <div class="top-card">
+            <img src="https://media-cache.cinematerial.com/p/500x/00y3oix2/transformers-rise-of-the-beasts-movie-poster.jpg?v=1682600690" alt="">
+          </div>
+          <div class="bottom-card">
+            <span><i class="bx bx-star"></i> 9.00</span>
+            <h4>Transformers: Rise of the Beasts</h4>
+            <a href="#">
+              <i class='bx bx-plus'></i>
+              <p>Watchlist</p>
+            </a>
+          </div>
+        </div>
+        <div class="movie-card">
+          <div class="top-card">
+            <img src="https://media-cache.cinematerial.com/p/500x/00y3oix2/transformers-rise-of-the-beasts-movie-poster.jpg?v=1682600690" alt="">
+          </div>
+          <div class="bottom-card">
+            <span><i class="bx bx-star"></i> 9.00</span>
+            <h4>Transformers: Rise of the Beasts</h4>
+            <a href="#">
+              <i class='bx bx-plus'></i>
+              <p>Watchlist</p>
+            </a>
+          </div>
+        </div>
+        <div class="movie-card">
+          <div class="top-card">
+            <img src="https://media-cache.cinematerial.com/p/500x/00y3oix2/transformers-rise-of-the-beasts-movie-poster.jpg?v=1682600690" alt="">
+          </div>
+          <div class="bottom-card">
+            <span><i class="bx bx-star"></i> 9.00</span>
+            <h4>Transformers: Rise of the Beasts</h4>
+            <a href="#">
+              <i class='bx bx-plus'></i>
+              <p>Watchlist</p>
+            </a>
+          </div>
+        </div>
+        <div class="movie-card">
+          <div class="top-card">
+            <img src="https://media-cache.cinematerial.com/p/500x/00y3oix2/transformers-rise-of-the-beasts-movie-poster.jpg?v=1682600690" alt="">
+          </div>
+          <div class="bottom-card">
+            <span><i class="bx bx-star"></i> 9.00</span>
+            <h4>Transformers: Rise of the Beasts</h4>
+            <a href="#">
+              <i class='bx bx-plus'></i>
+              <p>Watchlist</p>
+            </a>
+          </div>
+        </div>
+        <div class="movie-card">
+          <div class="top-card">
+            <img src="https://media-cache.cinematerial.com/p/500x/00y3oix2/transformers-rise-of-the-beasts-movie-poster.jpg?v=1682600690" alt="">
+          </div>
+          <div class="bottom-card">
+            <span><i class="bx bx-star"></i> 9.00</span>
+            <h4>Transformers: Rise of the Beasts</h4>
+            <a href="#">
+              <i class='bx bx-plus'></i>
+              <p>Watchlist</p>
+            </a>
+          </div>
+        </div>
+        <div class="movie-card">
+          <div class="top-card">
+            <img src="https://media-cache.cinematerial.com/p/500x/00y3oix2/transformers-rise-of-the-beasts-movie-poster.jpg?v=1682600690" alt="">
+          </div>
+          <div class="bottom-card">
+            <span><i class="bx bx-star"></i> 9.00</span>
+            <h4>Transformers: Rise of the Beasts</h4>
+            <a href="#">
+              <i class='bx bx-plus'></i>
+              <p>Watchlist</p>
+            </a>
+          </div>
+        </div>
+        <div class="movie-card">
+          <div class="top-card">
+            <img src="https://media-cache.cinematerial.com/p/500x/00y3oix2/transformers-rise-of-the-beasts-movie-poster.jpg?v=1682600690" alt="">
+          </div>
+          <div class="bottom-card">
+            <span><i class="bx bx-star"></i> 9.00</span>
+            <h4>Transformers: Rise of the Beasts</h4>
+            <a href="#">
+              <i class='bx bx-plus'></i>
+              <p>Watchlist</p>
+            </a>
+          </div>
+        </div>
+        <div class="movie-card">
+          <div class="top-card">
+            <img src="https://media-cache.cinematerial.com/p/500x/00y3oix2/transformers-rise-of-the-beasts-movie-poster.jpg?v=1682600690" alt="">
+          </div>
+          <div class="bottom-card">
+            <span><i class="bx bx-star"></i> 9.00</span>
+            <h4>Transformers: Rise of the Beasts</h4>
+            <a href="#">
+              <i class='bx bx-plus'></i>
+              <p>Watchlist</p>
+            </a>
+          </div>
+        </div>
+        <div class="movie-card">
+          <div class="top-card">
+            <img src="https://media-cache.cinematerial.com/p/500x/00y3oix2/transformers-rise-of-the-beasts-movie-poster.jpg?v=1682600690" alt="">
+          </div>
+          <div class="bottom-card">
+            <span><i class="bx bx-star"></i> 9.00</span>
+            <h4>Transformers: Rise of the Beasts</h4>
+            <a href="#">
+              <i class='bx bx-plus'></i>
+              <p>Watchlist</p>
+            </a>
+          </div>
+        </div>
+        <div class="movie-card">
+          <div class="top-card">
+            <img src="https://media-cache.cinematerial.com/p/500x/00y3oix2/transformers-rise-of-the-beasts-movie-poster.jpg?v=1682600690" alt="">
+          </div>
+          <div class="bottom-card">
+            <span><i class="bx bx-star"></i> 9.00</span>
+            <h4>Transformers: Rise of the Beasts</h4>
+            <a href="#">
+              <i class='bx bx-plus'></i>
+              <p>Watchlist</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Movies End -->
+
+    <!-- Detail Start -->
+    <section class="detail">
+      <div class="detail-content">
+        <div class="header">
+          <div class="title-year">
+            <h4>Spider-Man: Across the Spider-Verse</h4>
+            <p>2023</p>
+          </div>
+          <div class="rating-popularity">
+            <div class="rating">
+              <p>IMDb RATING</p>
+              <span><i class='bx bxs-star'></i> 9.5</span>
+            </div>
+            <div class="popularity">
+              <p>POPULARITY</p>
+              <span><i class='bx bxs-objects-vertical-bottom'></i> 5</span>
+            </div>
+          </div>
+        </div>
+        <div class="main">
+          <img src="https://media-cache.cinematerial.com/p/500x/nvzxjkhg/spider-man-across-the-spider-verse-movie-poster.jpg?v=1682534125" alt="">
+          <iframe
+            src="https://www.youtube.com/embed/shW9i6k8cB0"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+          <div class="main-boxes">
+            <div class="box">
+              <i class='bx bxs-videos' ></i>
+              <p>50 VIDEOS</p>
+            </div>
+            <div class="box">
+              <i class='bx bxs-photo-album' ></i>
+              <p>99 PHOTOS</p>
+            </div>
+          </div>
+        </div>
+        <div class="addition">
+          <div class="genre-description">
+            <span>Action</span>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto voluptatibus ullam enim quo, quia id nulla est necessitatibus quasi repellendus hic eaque illo culpa, error laborum magnam vitae nesciunt autem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, inventore veritatis aspernatur quae possimus consequuntur eligendi quaerat harum minus ex similique excepturi vitae quos ullam repudiandae debitis suscipit dolor. Sapiente!</p>
+          </div>
+          <div class="show-watchlist">
+            <a href="#" class="show">
+              <i class='bx bx-play-circle'></i>
+              Watch on Prime Video
+            </a>
+            <a href="#" class="watchlist">
+              <i class='bx bx-plus'></i>
+              Add to Watchlist
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Detail End -->
+
+    <!-- Casts Start -->
+    <section class="casts">
+      <div class="casts-content">
+        <div class="main-box">
+          <h3>Top Cast</h3>
+          <div class="cast-boxes">
+            <div class="cast-profile">
+              <img src="https://img.freepik.com/free-photo/portrait-white-man-isolated_53876-40306.jpg" alt="">
+              <p>Edwin R. Habacon</p>
+            </div>
+            <div class="cast-profile">
+              <img src="https://img.freepik.com/free-photo/portrait-white-man-isolated_53876-40306.jpg" alt="">
+              <p>John Doe</p>
+            </div>
+            <div class="cast-profile">
+              <img src="https://img.freepik.com/free-photo/portrait-white-man-isolated_53876-40306.jpg" alt="">
+              <p>John Doe</p>
+            </div>
+            <div class="cast-profile">
+              <img src="https://img.freepik.com/free-photo/portrait-white-man-isolated_53876-40306.jpg" alt="">
+              <p>John Doe</p>
+            </div>
+            <div class="cast-profile">
+              <img src="https://img.freepik.com/free-photo/portrait-white-man-isolated_53876-40306.jpg" alt="">
+              <p>John Doe</p>
+            </div>
+            <div class="cast-profile">
+              <img src="https://img.freepik.com/free-photo/portrait-white-man-isolated_53876-40306.jpg" alt="">
+              <p>John Doe</p>
+            </div>
+          </div>
+        </div>
+        <div class="side-box">
+          <h3>More To Explore</h3>
+          <div class="poster">
+            <img src="https://media-cache.cinematerial.com/p/500x/nvzxjkhg/spider-man-across-the-spider-verse-movie-poster.jpg?v=1682534125" alt="">
+            <img src="https://media-cache.cinematerial.com/p/500x/nvzxjkhg/spider-man-across-the-spider-verse-movie-poster.jpg?v=1682534125" alt="">
+            <img src="https://media-cache.cinematerial.com/p/500x/nvzxjkhg/spider-man-across-the-spider-verse-movie-poster.jpg?v=1682534125" alt="">
+          </div>
+          <div class="editorial">
+            <h3>Editorial List</h3>
+            <div class="list-box">
+              <div class="left-box">
+                <h4>Every Spider-Man movie ranked by IMDb users</h4>
+                <p>updated 6 days ago</p>
+              </div>
+              <div class="right-box">
+                <img src="https://media-cache.cinematerial.com/p/500x/nvzxjkhg/spider-man-across-the-spider-verse-movie-poster.jpg?v=1682534125" alt="">
+              </div>
+            </div>
+            <div class="list-box">
+              <div class="left-box">
+                <h4>Every Spider-Man movie ranked by IMDb users</h4>
+                <p>updated 6 days ago</p>
+              </div>
+              <div class="right-box">
+                <img src="https://media-cache.cinematerial.com/p/500x/nvzxjkhg/spider-man-across-the-spider-verse-movie-poster.jpg?v=1682534125" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Casts End -->
+  </body>
+</html>

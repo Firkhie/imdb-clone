@@ -1,0 +1,202 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "user1",
+      "email": "user1@example.com",
+      "password": "password1",
+      "role": "Admin",
+      "phoneNumber": "1234567890",
+      "address": "Address user 1"
+    },
+    {
+      "id": 2,
+      "username": "user2",
+      "email": "user2@example.com",
+      "password": "password2",
+      "role": "Admin",
+      "phoneNumber": "0987654321",
+      "address": "Address user 2"
+    },
+    {
+      "username": "Test",
+      "email": "Test@gmail.com",
+      "password": "123456",
+      "phoneNumber": "112233",
+      "address": "Street",
+      "id": 3
+    },
+    {
+      "username": "",
+      "email": "test@test",
+      "password": "1234",
+      "phoneNumber": "",
+      "address": "",
+      "id": 4
+    }
+  ],
+  "movies": [
+    {
+      "title": "Movie 1",
+      "synopsis": "Synopsis 1",
+      "trailerUrl": "https://www.youtube.com/watch?v=abcdef",
+      "imgUrl": "https://example.com/image1.jpg",
+      "releaseYear": 2023,
+      "genreId": "1",
+      "rating": 5,
+      "id": 1
+    },
+    {
+      "title": "Movie 2",
+      "synopsis": "Synopsis 2",
+      "trailerUrl": "https://www.youtube.com/watch?v=abcdef",
+      "imgUrl": "https://example.com/image2.jpg",
+      "releaseYear": 2023,
+      "genreId": "4",
+      "rating": 4,
+      "id": 2
+    },
+    {
+      "id": 3,
+      "title": "Movie 3",
+      "synopsis": "Synopsis 3",
+      "trailerUrl": "https://www.youtube.com/watch?v=abcdef",
+      "imgUrl": "https://example.com/image3.jpg",
+      "rating": 5,
+      "releaseYear": 2023,
+      "genreId": 3,
+      "authorId": 3
+    },
+    {
+      "id": 4,
+      "title": "Movie 4",
+      "synopsis": "Synopsis 4",
+      "trailerUrl": "https://www.youtube.com/watch?v=abcdef",
+      "imgUrl": "https://example.com/image4.jpg",
+      "rating": 3,
+      "releaseYear": 2023,
+      "genreId": 3,
+      "authorId": 3
+    },
+    {
+      "id": 5,
+      "title": "Movie 5",
+      "synopsis": "Synopsis 5",
+      "trailerUrl": "https://www.youtube.com/watch?v=abcdef",
+      "imgUrl": "https://example.com/image5.jpg",
+      "rating": 4,
+      "releaseYear": 2023,
+      "genreId": 3,
+      "authorId": 3
+    },
+    {
+      "id": 6,
+      "title": "Movie 6",
+      "synopsis": "Synopsis 6",
+      "trailerUrl": "https://www.youtube.com/watch?v=abcdef",
+      "imgUrl": "https://example.com/image6.jpg",
+      "rating": 4.5,
+      "releaseYear": 2023,
+      "genreId": 3,
+      "authorId": 3
+    },
+    {
+      "id": 7,
+      "title": "Movie 7",
+      "synopsis": "Synopsis 7",
+      "trailerUrl": "https://www.youtube.com/watch?v=abcdef",
+      "imgUrl": "https://example.com/image7.jpg",
+      "rating": 3.5,
+      "releaseYear": 2023,
+      "genreId": 3,
+      "authorId": 3
+    },
+    {
+      "id": 8,
+      "title": "Movie 8",
+      "synopsis": "Synopsis 8",
+      "trailerUrl": "https://www.youtube.com/watch?v=abcdef",
+      "imgUrl": "https://example.com/image8.jpg",
+      "rating": 4,
+      "releaseYear": 2023,
+      "genreId": 3,
+      "authorId": 3
+    },
+    {
+      "id": 10,
+      "title": "Movie 10",
+      "synopsis": "Synopsis 10",
+      "trailerUrl": "https://www.youtube.com/watch?v=abcdef",
+      "imgUrl": "https://example.com/image10.jpg",
+      "rating": 3.5,
+      "releaseYear": 2023,
+      "genreId": 3,
+      "authorId": 3
+    },
+    {
+      "id": 11,
+      "title": "Movie 11",
+      "synopsis": "Synopsis 11",
+      "trailerUrl": "https://www.youtube.com/watch?v=abcdef",
+      "imgUrl": "https://example.com/image11.jpg",
+      "rating": 4,
+      "releaseYear": 2023,
+      "genreId": 3,
+      "authorId": 3
+    },
+    {
+      "title": "Movie 11",
+      "synopsis": "Synopsis 15",
+      "trailerUrl": "https://www.youtube.com/watch?v=abcdef",
+      "imgUrl": "https://example.com/image15.jpg",
+      "releaseYear": 2023,
+      "genreId": "1",
+      "rating": 3.5,
+      "id": 15
+    },
+    {
+      "id": 17,
+      "title": "Movie 17",
+      "synopsis": "Synopsis 17",
+      "trailerUrl": "https://www.youtube.com/watch?v=abcdef",
+      "imgUrl": "https://example.com/image17.jpg",
+      "rating": 4,
+      "releaseYear": 2023,
+      "genreId": 3,
+      "authorId": 3
+    },
+    {
+      "title": "Movie 18",
+      "synopsis": "Synopsis 18",
+      "trailerUrl": "https://www.youtube.com/watch?v=abcdef",
+      "imgUrl": "https://example.com/image18.jpg",
+      "releaseYear": "2022",
+      "genreId": "3",
+      "rating": "3.9",
+      "id": 18
+    }
+  ],
+  "genres": [
+    {
+      "id": 1,
+      "name": "Romance"
+    },
+    {
+      "id": 2,
+      "name": "Adventure"
+    },
+    {
+      "id": 3,
+      "name": "Action"
+    },
+    {
+      "id": 4,
+      "name": "Comedy"
+    },
+    {
+      "name": "Horror",
+      "id": 5
+    }
+  ],
+  "casts": []
+}
